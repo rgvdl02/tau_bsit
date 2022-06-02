@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Page</title>
+</head>
+<style>
+/* -----Add a black background color to the top navigation----- */
+.topnav {
+  background-color: #333;
+  overflow: hidden;
+}
+
+/* -----Style the links inside the navigation bar----- */
+.topnav a {
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+/* -----Change the color of links on hover----- */
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+/* -----Add a color to the active/current link----- */
+.topnav a.active {
+  background-color: #04AA6D;
+  color: white;
+}
+
+/* --------------------Profiles-------------------- */
+.Home{
+    display: inline-flex;
+    height: 600px;
+}
+.rhenz{
+    width: auto;
+    padding: 5%;
+}
+.ericka{
+    width: auto;
+    padding: 15%;
+}
+.image{
+    margin-left: 30%;
+    border-radius: 60%;
+    border: 5px solid #555;
+    height: 250px;
+    width: 250px;
+    position: relative;
+    margin-top: 5%;
+}
+.read{
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 1000px;
+    color: blue;
+}
+.v:Hover{
+    color: gray;
+}
+.hi{
+    text-align: center;
+}
+.pg{
+    font-size: 16px;
+    text-indent: 30px;
+}
+
+/* Use a media query to add a break point at 800px: */
+@media screen and (max-width: 1000px) {
+  .less, .Main, .greater {
+    width: 100%; /* The width is 100%, when the viewport is 800px or smaller */
+  }
+}
+
+@media only screen and (max-width: 320px) {
+  /* For mobile phones: */
+  .menu, .Main, .greater {
+    width: 100%;
+  }
+}
+.blog{
+    margin-top: 5%; 
+    font-size: 25px;
+    margin-left: 5%; 
+    font-family: cursive;
+    padding: 0%;
+}
+.blg1{
+    font-family: cursive;
+    font-weight: 500;
+    font-size: 40px;
+    word-spacing: 0%;
+}
+/* Three columns side by side */
+.blg2 {
+  float: left;
+  width: 30%;
+  margin-bottom: 18px;
+  padding: 0 5px;
+}
+
+/* Display the columns below each other instead of side by side on small screens */
+@media screen and (max-width: 650px) {
+  .blg2 {
+    width: 100%;
+    display: block;
+  }
+}
+
+/* Add some shadows to create a card effect */
+.card {
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2);
+}
+
+/* Some left and right padding inside the container */
+.container {
+  padding: 0 14px;
+}
+
+.seemore{
+    text-decoration: none;
+    color: red;
+    font-weight: 1000;
+}
+.seemore:hover{
+    text-decoration: none;
+    color: tomato;
+}
+
+/* Clear floats */
+.container::after, .blg3::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.button {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 8px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+}
+
+.button:hover {
+  background-color: #555;
+}
+.galery{
+    margin-top: 5%; 
+    font-size: 25px;
+    margin-left: 5%; 
+    font-family: cursive;
+    padding: 0%;
+}
+.gal1{
+    font-family: cursive;
+    font-weight: 500;
+    font-size: 40px;
+    word-spacing: 0%;
+}
+
+/* Three image containers (use 25% for four, and 50% for two, etc) */
+.column {
+  float: left;
+  width: 33.33%;
+  padding: 5px;
+}
+
+/* Clear floats after image containers */
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+.row {
+  display: flex;
+}
+
+.column {
+  flex: 33.33%;
+  padding: 5px;
+}
+/* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 500px) {
+  .column {
+    width: 100%;
+  }
+}
+</style>
+<body>
+    <div class="main1">
+
+        <header class="header1">
+            <div class="topnav">
+                <a class="active" href="#home">Home</a>
+                <a href="#blog">Blog</a>
+                <a href="#galery">Galery</a>
+                <a href="#calculator">Calculator</a>
+                <a href="#about page">About Page</a>
+            </div>
+        </header>
+        <div class="Home" id="Home">
+            <div class="rhenz">
+                <a href="#"><img src="../images/rhenz.jpg" alt="" class="image"></a>
+                <h3 class="hi">Hi My name is Rhenz John V. De Luna</h3>
+                <p class="pg">Currently studying at Tarlac Agricultural University, and currently taking the course of Information Technology. <span><strong><a href="../html/Rhenz.html" id="v" class="read">Read more...</a></strong></span>
+                </p>
+            </div>
+            <div class="rhenz">
+                <a href="#"><img src="../images/rhenz.jpg" alt="" class="image"></a>
+                <h3 class="hi">Hi My name is Rhenz John V. De Luna</h3>
+                <p class="pg">Currently studying at Tarlac Agricultural University, and currently taking the course of Information Technology. <span><strong><a href="../html/Rhenz.html" id="v" class="read">Read more...</a></strong></span>
+                </p>
+            </div>
+        </div>
+        <div class= "blog" id="blog">
+            <h1 class="blg1">Blog</h1>
+            <div class="blg3">
+                <div class="blg2">
+                    <div class="card">
+                        <img src="../images/my_programming_blog.png" alt="Jane" style="width:100%">
+                        <div class="container">
+                            <h2>MY PROGRAMMING BLOG</h2>
+                            <p>Programming Is Learned Faster With These 7 Tips</p>
+                            <p><strong><a href="../html/Blog1.html" class="seemore">See More...</a></strong></p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="blg2">
+                    <div class="card">
+                        <img src="../images/money_max.png" alt="Money_Max" style="width:100%">
+                        <div class="container">
+                            <h2>MONEYMAX</h2>
+                            <p>10 Pinoy Tech Bloggers on What To Do Before Buying a Gadget</p>
+                            <p><strong><a href="../html/Blog2.html" class="seemore">See More...</a></strong></p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="blg2">
+                    <div class="card">
+                        <img src="../images/bit_blog.png" alt="Bit_Blog" style="width:100%">
+                        <div class="container">
+                            <h2>BIT.AI</h2>
+                            <p>Bit.ai is the essential next-gen workplace and document collaboration platform. that helps teams share knowledge by connecting any type of digital content.</p>
+                            <p><strong><a href="../html/Blog3.html" class="seemore">See More...</a></strong></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class= "galery" id="galery">
+            <h1 class="gal1">Galery</h1>
+            <div class="row">
+                <div class="column">
+                    <img src="../images/textspeech.png" alt="Text To Speech" style="width:100%">
+                </div>
+                <div class="column">
+                    <img src="../images/speechrecog.png" alt="Speech Recognizer" style="width:100%">
+                </div>
+                <div class="column">
+                    <img src="../images/crud.png" alt="Crud" style="width:100%">
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+<script>
+
+
+
+</script>
+</body>
+</html>
